@@ -3,53 +3,46 @@
 <head>
     <meta charset="utf-8" />
     <title>Contacto - Zelizhn</title>
+    <link rel="stylesheet" href="css/zelizhn.css" />
 </head>
 <body>
-    <h1>Contáctame</h1>
+
+    <h1>Contacto</h1>
 
     <p>¿Tienes preguntas, ideas o deseas trabajar con nosotros? En Zelizhn estamos listos para escucharte y ayudarte a impulsar tu presencia digital.</p>
 
-    <h2>Detalles de contacto</h2>
-    <ul>
-        <li>Teléfono: +504 8981-9683</li>
-        <li>Correo: zelizhn@gmail.com</li>
-        <li>Ubicación: Tegucigalpa, Honduras</li>
-    </ul>
-
-    <h2>Envíanos un mensaje</h2>
-        <form action="contacto.html" method="GET">
-
-            <label for="txtNombre">Nombre Completo:</label>
-            <input type="text" name="nombre" id="txtNombre"  />
-            <br/>
-
-            <label for="txtEmail">Correo Electronico:</label>
-            <input type="email" name="email" id="txtEmail" />
-            <br/>
-
-            <label for="txtAsunto">Asunto:</label>
-            <input type="text" name="asunto" id="txtAsunto"/>
-            <br/>
-            
-            <label for="txtMensaje">Mensaje:</label><br />
-            <textarea name="mensaje" id="txtMensaje" rows="5" cols="50"></textarea><br />
-            <br/>
-            
-            <button type="submit" name="btnSubmit">Enviar</button>
+    <div class="contenedor-contacto">
+        <div class="formulario">
+            <h2>Envíanos un mensaje</h2>
+            <form action="contacto.html" method="GET">
+                <input type="text" name="nombre" id="txtNombre" placeholder="Nombre *" required />
+                <input type="email" name="email" id="txtEmail" placeholder="Correo electrónico *" required />
+                <input type="text" name="asunto" id="txtAsunto" placeholder="Asunto" />
+                <textarea name="mensaje" id="txtMensaje" placeholder="Mensaje" rows="5" cols="50"></textarea>
+                <button type="submit" name="btnSubmit">Enviar</button>
             </form>
+        </div>
+
+        <div class="info-contacto">
+            <h2>Queremos escuchar sobre ti</h2>
+            <p>Tegucigalpa, Honduras.</p>
+            <p><strong>zelizhn@gmail.com</strong><br>Tel: +504 8981-9683</p>
+        </div>
+    </div>
 
     <h2>Navegación del sitio</h2>
-    <ul>
-            <li><a href="intro_zeliz.html">Inicio</a></li>
-            <li><a href="acercade.html">Acerca de Nosotros</a></li>
-            <li><a href="proyectos.html">Nuestros Proyectos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
-            <li><a href="contacto.html">Contáctenos</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="redes.html">Redes Sociales</a></li>
+    <ul class="navegacion">
+        <li><a href="intro_zeliz.html">Inicio</a></li>
+        <li><a href="acercade.html">Acerca de Nosotros</a></li>
+        <li><a href="proyectos.html">Nuestros Proyectos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="contacto.html">Contáctenos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        <li><a href="redes.html">Redes Sociales</a></li>
     </ul>
+
 </body>
 </html>
