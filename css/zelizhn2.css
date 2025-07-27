@@ -359,3 +359,31 @@ ul {
 footer{
     text-align: center;
 }
+
+/* Equipo CENTRAR IMAGEN */
+
+.equipo-integrante {
+    text-align: center;
+    margin: 2rem auto;
+}
+.equipo-integrante img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+.clientes{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.clientes img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
