@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003e93;
+}
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003e93;
+}
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003e93;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4121f6;
+    padding: 1rem 2rem;
+    color: #ecf1f6;
+}
+
+header .Navegación h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ecf1f6;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #5749c9;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #062f5f;
+}
+
+main h1::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 6px;
+    background-color: #5749c9;
+    margin: 0 auto 10px auto;
+    border-radius: 3px;
+}
+
+main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #003e93;
+}
+
+/* Carousel */
+.carusel {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carusel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carusel-slide picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carusel-action {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.carusel-action h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carusel-action button {
+    background-color: #5749c9;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carusel-action button:hover {
+    background-color: #3c36a4;
+}
+
+/* List and Links */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+main ul li {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #304c8d;
+    border-bottom: 1px solid #e9edf5;
+    transition: background-color 0.3s ease;
+}
+
+main ul li:last-child {
+    border-bottom: none;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #003e93;
+    font-weight: bold;
+}
+
+main ul li:hover {
+    background-color: #f4f6f8;
+}
+
+/* Video */
+main video {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Alexis*/
+
+.boton-contacto {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #e9edf5;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.08);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #304c8d;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.boton-contacto:hover {
+    color: #0c2d5c;
+    background-color: #d3d7e2;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.formulario {
+    flex: 1 1 300px;
+    max-width: 450px;
+}
+
+.formulario h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #003e93;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    background-color: #5749c9;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #3c36a4;
+}
+
+.info-contacto {
+    flex: 1 1 300px;
+    max-width: 450px;
+    text-align: left;
+}
+
+.info-contacto h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #003e93;
+}
+
+.info-contacto p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+.info-contacto strong {
+    color: #000;
+}
+
+.mensaje-contacto {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.mensaje-contacto a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0033cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mensaje-contacto a:hover {
+    text-decoration: underline;
+}
+
+.navegacion li a, .redes-sociales li a, ul li a {
+    text-decoration: none;
+    color: #304c8d;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align:center;
+}
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+footer{
+    text-align: center;
+}
