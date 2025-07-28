@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <title>Nuestros Proyectos - Zelizhn</title>
     <link rel="stylesheet" href="css/zelizhn2.css" />
+    <script src="js/Validaciones.js"></script>
 </head>
 <body>
     <header>
     <section class="Navegación">
+        <div class="logo-con-titulo">
+        <img src="image/logoZ.avif" alt="Logo Zeliz">
         <h2>Zeliz</h2>
+        </div>
     <section>
       <nav>   
   
@@ -28,29 +32,66 @@
   </header>
 
 
-    <h2>Social Media: Gestión comunitaria</h2>
+    <h2 class="fade-in">Social Media: Gestión comunitaria</h2>
     <p>
-       Nos referimos al uso estratégico de redes sociales para construir, gestionar y mantener una comunidad en línea en torno a una marca o persona.
+    Nos referimos al uso estratégico de redes sociales para construir, gestionar y mantener una comunidad en línea en torno a una marca o persona.
     </p>
-    <img src="image/socialmedia.jpeg" alt="Foto de Francis Lizardo" />
 
-    <h2>Videos: Campaña de Facebook</h2>
+    <div class="carousel-socialmedia-container fade-in">
+    <div class="carousel-socialmedia">
+        <div class="carousel-item">
+        <img src="image/Cap-Instagram.png" alt="Proyecto Social Media 1">
+        </div>
+        <div class="carousel-item">
+        <img src="image/Cap-Facebook.png" alt="Proyecto Social Media 2">
+        </div>
+        <div class="carousel-item">
+        <img src="image/Cap-Linkedin.png" alt="Proyecto Social Media 3">
+        </div>
+    </div>
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
+    </div>
+
+
+    <h2 class="fade-in">Videos: Campaña de Facebook</h2>
     <p>
         Es un formato audiovisual que nos permite transmitir mensajes de forma dinámica y atractiva, ideal para campañas publicitarias, educativas o informativas.
     </p>
-    <img src="image/video.jpeg" alt="Foto de Francis Lizardo" />
+    <div style="text-align: center; margin-top: 20px;">
+        <video width="40%" controls>
+            <source src="video_optimizado.mp4" type="video/mp4">
+        </video>
+    </div>
 
-    <h2>Fotografía: PR Lanzamiento</h2>
+
+    <h2 class="fade-in">Fotografía: PR Lanzamiento</h2>
     <p>
         Es el arte y técnica de capturar imágenes que transmiten emociones, identidad de marca y profesionalismo en productos, personas o eventos.
     </p>
-    <img src="image/foto.jpeg" alt="Foto de Francis Lizardo" />
+    <div class="carousel-fotografia-container fade-in">
+    <div class="carousel-fotografia">
+        <div class="carousel-item">
+        <img src="image/PR 1.jpg" alt="Fotografía PR 1">
+        </div>
+        <div class="carousel-item">
+        <img src="image/PR 2.jpg" alt="Fotografía PR 2">
+        </div>
+        <div class="carousel-item">
+        <img src="image/PR 3.jpg" alt="Fotografía PR 3">
+        </div>
+    </div>
+    <button class="carousel-button-foto prev">❮</button>
+    <button class="carousel-button-foto next">❯</button>
+    </div>
 
-    <h2>Marcas: Planificación del contenido</h2>
+
+    <h2 class="fade-in">Marcas: Planificación del contenido</h2>
     <p>
         Conjunto de elementos visuales, verbales y emocionales que identifican a una organización o persona, diferenciándola de otras y conectándola con su audiencia.
     </p>
-    <img src="image/marcas.jpeg" alt="Foto de Francis Lizardo" />
+    <img src="image/Marcas.jpg" alt="Marcas" class="imagen-marcas" />
+
     <footer>
      <section>
             &copy; Derechos Reservados Zelizhn 2025

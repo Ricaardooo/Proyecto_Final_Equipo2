@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <title>Acerca de Nosotros - Zelizhn</title>
       <link rel="stylesheet" href="css/zelizhn2.css" />
+      <script src="js/Validaciones.js"></script>
 </head>
 <body>
      <header>
     <section class="Navegación">
+        <div class="logo-con-titulo">
+        <img src="image/logoZ.avif" alt="Logo Zeliz">
         <h2>Zeliz</h2>
+        </div>
     <section>
       <nav>   
   
@@ -30,18 +34,38 @@
        
     <p>Somos una empresa familiar dedicada a la creación y manejo de contenido digital para empresas que incluyen marca personal, y marca institucional, ediciones y producciones de video, podcast  y fotografías, brindándole una estrategia digital única.</p>
 
-    <h2>Conoce mas de lo que hacemos en Zelizhn</h2>
+    <h2 class="fade-in">Conoce mas de lo que hacemos en Zelizhn</h2>
 
         <p>Portafolio: <a href="https://www.behance.net/gallery/216130617/Portafolio" target="_blank">zelizhn</a></p>
     
 
-    <h2>Nuestros Valores</h2>
+    <h2 class="fade-in">Nuestros Valores</h2>
 
-        <p>Creatividad</p>
-        <p>Compromiso</p>
-        <p>Calidad</p>
-        <p>Trabajo en equipo</p>
-        <p>Orientación al cliente</p>
+    <div class="valor fade-in" onclick="mostrarDescripcion('desc1')">
+    <P>Creatividad</p>
+    <p id="desc1" class="descripcion">Creamos soluciones originales, visualmente atractivas y adaptadas a cada cliente y marca.</p>
+    </div>
+
+    <div class="valor fade-in" onclick="mostrarDescripcion('desc2')">
+    <p>Compromiso</p>
+    <p id="desc2" class="descripcion">Nos involucramos de lleno en cada proyecto, cumpliendo con responsabilidad y pasión.</p>
+    </div>
+
+    <div class="valor fade-in" onclick="mostrarDescripcion('desc3')">
+    <p>Calidad</p>
+    <p id="desc3" class="descripcion">Nos enfocamos en entregar trabajos bien hechos, con atención a los detalles y altos estándares.</p>
+    </div>
+
+    <div class="valor fade-in" onclick="mostrarDescripcion('desc4')">
+    <p>Trabajo en equipo</p>
+    <p id="desc4" class="descripcion">Fomentamos la colaboración para combinar talentos y lograr mejores resultados.</p>
+    </div>
+
+    <div class="valor fade-in" onclick="mostrarDescripcion('desc5')">
+    <p>Orientación al cliente</p>
+    <p id="desc5" class="descripcion">Escuchamos y comprendemos a nuestros clientes para ofrecer soluciones que realmente les sirvan.</p>
+    </div>
+
     
  </main>
 <footer>
@@ -49,5 +73,6 @@
             &copy; Derechos Reservados Zelizhn 2025
         </section>
 </footer>
+
 </body>
 </html>

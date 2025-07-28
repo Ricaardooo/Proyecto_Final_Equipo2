@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
-/* Universal Styles */
+
 * {
     box-sizing: border-box;
 }
@@ -46,7 +46,6 @@ h3 {
 
 
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -85,7 +84,7 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Main Section */
+
 main h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -120,7 +119,26 @@ main h2 {
     color: #003e93;
 }
 
-/* Carousel */
+.logo-con-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-con-titulo img {
+  height: 40px;
+}
+
+.contenedor-img {
+  text-align: center; 
+  margin-top: 20px;   
+}
+
+.contenedor-img img {
+  width: 150px;       
+}
+
+
 .carusel {
     position: relative;
     overflow: hidden;
@@ -178,7 +196,7 @@ main h2 {
     background-color: #3c36a4;
 }
 
-/* List and Links */
+
 main ul {
     list-style: none;
     padding: 0;
@@ -212,7 +230,6 @@ main ul li:hover {
     background-color: #f4f6f8;
 }
 
-/* Video */
 main video {
     display: block;
     margin: 2rem auto;
@@ -221,7 +238,6 @@ main video {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Alexis*/
 
 .boton-contacto {
     display: block;
@@ -360,7 +376,6 @@ footer{
     text-align: center;
 }
 
-/* Equipo CENTRAR IMAGEN */
 
 .equipo-integrante {
     text-align: center;
@@ -386,4 +401,258 @@ footer{
     max-width: 200px;
     height: auto;
 }
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.valor {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.valor:hover {
+    background-color: #f0f0f0;
+}
+.descripcion {
+    display: none;
+    margin-top: 5px;
+    color: #333;
+}
+.descripcion.visible {
+    display: block;
+}
+
+.carousel-socialmedia-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.carousel-socialmedia {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-fotografia-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-fotografia {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-fotografia .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-fotografia .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.carousel-button-foto {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.carousel-button-foto.prev {
+    left: 10px;
+}
+
+.carousel-button-foto.next {
+    right: 10px;
+}
+
+.imagen-marcas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.carousel-produccion-container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.carousel-produccion {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
+.carousel-marketing-container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-marketing {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-marketing .carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-marketing .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.carousel-diseno-container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-diseno {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-diseno .carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-diseno .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contactos {
+    text-align: center;
+    color: #003e93;
+    
+    
+}
+
+.contactos a:hover {
+    text-decoration: underline;
+}
+
+
+
 
